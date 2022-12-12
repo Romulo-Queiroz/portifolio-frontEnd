@@ -90,10 +90,12 @@ a:hover {
   color: #ffffff;
 }
 .paragrafoMain {
+  color: #ffff;
+  font-weight: 300;
   font-size: 22px;
   padding: 5px;
 
-  height: 160px;
+  height: 110px;
   
 }
 .textoPerfil {
