@@ -87,16 +87,16 @@ a:hover {
   font-size: 36px;
   line-height: 54px;
 
-  color: #ffffff;
+  color: #ffff;
 }
 .paragrafoMain {
   color: #ffff;
-  font-weight: 300;
-  font-size: 22px;
   padding: 5px;
-
   height: 110px;
-  
+
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "Poppins";
 }
 .textoPerfil {
   width: 50%;
