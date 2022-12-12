@@ -8,3 +8,5 @@ function changeTema () {
     console.log('Cliquei');
     // body.style.backgroundColor = 'white';
 };
+
+// teste
