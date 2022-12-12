@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  
+}
+
+/* nav-bar */
+
+
+.nav-bar {
+  position: absolute;
+  width: 100%;
+  display: inline;
+  
+  text-align: center;
+  top: 24px;
+  padding: 18px;
+  height: 36px;
+  
+}
+
+#logo {
+  position: absolute;
+  left: calc(50% - 61px/2 - 482.5px);
+  top: 14px;
+  display: inline-block;
+
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 700px;
+  line-height: 36px;
+  font-style: normal;
+}
+
+a {
+  padding: 12px;
+  text-decoration: none;
+  color: rgb(134, 132, 132);
+  
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-weight: bold;
+  transition-duration: 0.5s;
+
+}
+a:hover {
+  background-color: var(--cora);
+  color: var(--escuro);
+}
+#tema {
+  position: absolute;
+  right: calc(50% - 61px/2 - 482.5px);
+  top: 14px;
+  display: inline-block;
+
+  font-size: 24px;
+}
+
+/* Meu body */
+
