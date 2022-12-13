@@ -78,8 +78,8 @@ a:hover {
   padding: 18px;
 }
 .textoPrincipal {
-  width: 559px;
-  height: 215px;
+  width: 580px;
+  height: 200px;
 
   font-family: "Poppins";
   font-style: normal;
@@ -94,6 +94,7 @@ a:hover {
   padding: 5px;
   height: 110px;
 
+  text-indent: 10px;
   font-weight: 400;
   font-size: 22px;
   font-family: "Poppins";
