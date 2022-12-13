@@ -4,7 +4,26 @@
   text-decoration: none;
 }
 
-body {
+
+
+html[data-theme='light'] {
+  width: 100%;
+  height: 980px;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    to bottom right,
+    rgb(180, 152, 245) 10%,
+    rgb(212, 143, 240) 18%,
+    rgb(242, 252, 200) 40%
+  );
+   --text-color: #000000;
+   --link-color: #828fff;
+   --btn-color: #ffffff;
+}
+
+
+
+html[data-theme='dark'] {
   width: 100%;
   height: 980px;
   background-repeat: no-repeat;
@@ -14,6 +33,9 @@ body {
     rgb(146, 34, 190) 18%,
     rgb(37, 36, 37) 40%
   );
+  --text-color: #ffffff;
+  --link-color: #543fd7;
+ 
 }
 
 /* nav-bar */
@@ -35,7 +57,7 @@ body {
   top: 14px;
   display: inline-block;
 
-  color: white;
+  color: var(--text-color);
   font-family: "Poppins";
   font-size: 20px;
   font-weight: 700px;
@@ -46,7 +68,7 @@ body {
 a {
   padding: 12px;
   text-decoration: none;
-  color: rgb(252, 252, 252);
+  color: var(--text-color);
 
   font-size: 24px;
   font-family: "Poppins";
@@ -66,7 +88,7 @@ a:hover {
   display: inline-block;
 
   cursor: pointer;
-  color: white;
+  color: var(--text-color);
   font-size: 24px;
 }
 
@@ -87,10 +109,10 @@ a:hover {
   font-size: 36px;
   line-height: 54px;
 
-  color: #ffff;
+  color: var(--text-color);
 }
 .paragrafoMain {
-  color: #ffff;
+  color: var(--text-color);
   padding: 5px;
   height: 110px;
 
@@ -116,7 +138,7 @@ span {
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  
   background-clip: text;
 
   -webkit-background-clip: text;
@@ -139,7 +161,7 @@ span {
   height: 50px;
   border: none;
   outline: none;
-  color: #fff;
+  color: var(--btn-color);
   background: #111;
   cursor: pointer;
   position: relative;
@@ -211,6 +233,10 @@ span {
   }
 }
 
+.btn {
+  color: var(--btn-color);
+}
+
 .imagemPerfil {
   background-image: url(../srcs/programming-animate.svg);
   background-repeat: no-repeat;
@@ -233,7 +259,7 @@ span {
   padding: 19px;
 }
 
-/* teste */
+/* botao*/
 
 .glow-on-hover {
   top: 390px;
@@ -244,7 +270,7 @@ span {
 
   border: none;
   outline: none;
-  color: #fff;
+  color: var(--btn-color);
   background: #111;
   cursor: pointer;
   position: absolute;
@@ -285,7 +311,7 @@ span {
 }
 
 .glow-on-hover:active {
-  color: #000;
+  color: var(--btn-color);
 }
 
 .glow-on-hover:active:after {
@@ -321,8 +347,9 @@ span {
 }
 
 .projectLink a {
-  color: lightblue;
+  color: var(--link-color)
 }
 .projectLink a:hover {
   color: rgb(33, 182, 231);
 }
+
