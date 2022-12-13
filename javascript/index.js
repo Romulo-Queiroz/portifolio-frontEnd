@@ -1,12 +1,26 @@
+let btn = document.querySelector("#tema");
+btn.addEventListener("click", changeTema);
 
-const body = document.querySelector('body')
+function changeTema() {
+  console.log("Cliquei");
 
-let btn = document.querySelector('#tema');
-btn.addEventListener('click', changeTema)
+  var storedTheme =
+    localStorage.getItem("theme") ||
+    (window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light");
+  if (storedTheme)
+    document.documentElement.setAttribute("data-theme", storedTheme);
 
-function changeTema () {
-    console.log('Cliquei');
-    // body.style.backgroundColor = 'white';
-};
+  btn.onclick = function () {
+    var currentTheme = document.documentElement.getAttribute("data-theme");
+    var targetTheme = "light";
 
-// teste
+    if (currentTheme === "light") {
+      targetTheme = "dark";
+    }
+
+    document.documentElement.setAttribute("data-theme", targetTheme);
+    localStorage.setItem("theme", targetTheme);
+  };
+}
