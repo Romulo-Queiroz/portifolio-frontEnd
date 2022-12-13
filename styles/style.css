@@ -14,7 +14,7 @@ html[data-theme="light"] {
     rgb(212, 143, 240) 18%,
     rgb(242, 252, 200) 40%
   );
-  --text-color: #000000;
+  
   --link-color: #543fd7;
   --btn-color: #ffffff;
 }
@@ -155,7 +155,7 @@ span {
   height: 50px;
   border: none;
   outline: none;
-  color: var(--btn-color);
+  color: var(--text-color);
   background: #111;
   cursor: pointer;
   position: relative;
