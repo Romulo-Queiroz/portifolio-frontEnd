@@ -1,2 +1,8 @@
-# portifolio-frontEnd
-Criando um portifolio usando somente docs para exercitar o aprendizado.
+> # Projeto Front-end
+___
+
+> - Html semântico
+> - Css3 
+> - Js para light-mode 
+
+#### Projeto pequeno com o intuito de praticar css e html.
